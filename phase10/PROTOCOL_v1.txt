@@ -1,0 +1,86 @@
+Phase 10: decision functionals of ambiguous physiological paths
+Recorded 2026-11-08 BEFORE the new diagnostic results.
+
+Purpose
+Test a narrow candidate: efficient outer bounds and feasible witnesses for a
+downstream additive screening score over globally near-optimal HSMM paths.
+This is an exploratory method feasibility study, not a novelty declaration or
+clinical superiority test. The consumed phase9 reserve is prohibited here.
+
+Known prior art
+Nicosia (arXiv:2606.17181v1, June 2026) already defines near-optimal path tubes,
+exact local projections, stability gaps and score-perturbation guarantees.
+Brown and Golod (2010) already explore k-best alternative explanations.
+Maua et al. (2014) already perform imprecise-HMM sensitivity analysis.
+Lagrangian relaxation of resource-constrained paths is classical. None of
+these ingredients, nor prefix-sum acceleration, is claimed as our invention.
+The narrower question is whether decision-functional bounds offer measurable
+value beyond local projected uncertainty, and eventually a useful target for
+compact decision-aware distillation. Training is conditional on this gate.
+
+Mathematical object
+For fixed posterior p and fixed duration/transition potentials, each topology
+has a finite acyclic path graph. L(q) is its additive log score; R(q) is the sum
+of selected emission probabilities, counted once per observed frame. Let
+L*=max_q L(q), Q_e={q:L(q)>=L*-e}. We seek the range of C(q)=R(q)/T on Q_e.
+For any lambda>0,
+  max_Qe C <= [max_q{L(q)+lambda R(q)}-L*+e]/(lambda T).
+For lambda<0 the same expression is a lower bound on min_Qe C.
+These inequalities follow immediately from weak duality. Returned feasible
+paths separately give inner bounds. No claim of zero duality gap is made.
+Intersect the dual outer bounds with the outer bounds from exact frame-state
+projections. Use all ties, never treat the projection Cartesian product as a
+set of feasible complete paths.
+
+Each of Healthy/Holo/Early/Mid has its own independent likelihood tolerance.
+For score s=max_m C_m-C_H, a sound interval is
+  [max_m lower_m-upper_H, max_m upper_m-lower_H].
+Feasible per-topology paths give constructive score witnesses. This is a
+fixed-posterior, fixed-duration diagnostic, not robustness to audio changes,
+parameter uncertainty, true-state coverage or disease correctness. The
+quality rule and visit aggregation are NOT evaluated in this first record
+diagnostic. Sign(s) is a native site-score diagnostic, NOT the deployed policy.
+
+Implementation contract
+Represent the corrected legacy decoder's boundary graph, including its
+duplicate first-emission initialization, endpoint clamping, FLT_MIN transition
+and duration floors, and terminal extension. Use float64 additive arithmetic
+and prefix sums; do not claim bitwise equivalence to legacy float32 summation.
+Compare zero-tilt paths/confidences against saved legacy outputs and report
+every mismatch. Never change frozen phase9 code, weights, reports or results.
+Validate the graph and bounds independently by exhaustive enumeration of
+small synthetic instances, including exact ties and terminal boundaries.
+Numerical guard: 1e-8 in total log score and 1e-10 in confidence. These are
+engineering tolerances, not outward-rounded machine-verified certificates.
+
+Data selection BEFORE array inspection
+Use only already-saved pilot_validation posteriors from the fixed short
+pure-KD model seed 20261107, alpha=1, at 20 seconds/site. Verify original
+array hashes. Read only PatientID/group_id/role from split metadata.
+Choose one record per linked person: first canonical available site in
+AV,PV,TV,MV order, then lexical record. Sort persons by SHA256 of
+'phase10-v1:' + group_id and take the first 24. No labels or phase annotations
+are loaded for selection or evaluation. Save the selection manifest before
+opening selected arrays. All 24 records and all four topologies are retained.
+
+Fixed diagnostic grid and comparisons
+Normalized deficit eta=e/T in [0,0.001,0.005,0.01,0.05]. These are sensitivity
+scales, not calibrated probability levels. Compare: (1) single Viterbi score;
+(2) exact projected-state outer bounds; (3) projection intersected with dual
+outer bounds, plus feasible witnesses. For each topology and tolerance report
+range width, witness/outer gaps, frame ambiguity, runtime and solver calls.
+For each record report score width, sign certification, and whether feasible
+paths actually attain both signs. Include runtime excluding JIT compilation;
+this is method diagnostic timing, not a rural-device deployment benchmark.
+
+Go/no-go
+Correctness is mandatory: no exhaustive-enumeration containment failures,
+projection errors or invalid feasible witnesses. Report numerical mismatches.
+Proceed to a training objective only if decision-functional bounds materially
+tighten projected bounds (median width reduction >=25% at eta=0.005) and
+resolve at least two additional site signs among the fixed 24 records at any
+declared nonzero eta, or constructively demonstrate both signs in >=2 records.
+These are engineering feasibility criteria, not inferential significance or
+evidence of novelty. Do not change them after seeing outcomes.
+Novelty remains a separate full-text review gate. If the implementation is
+only a standard relaxation applied to this task, describe it that way.

@@ -1,0 +1,21 @@
+{
+  "date": "2026-11-17",
+  "status": "passed",
+  "core_synthetic_tests": 11,
+  "upstream_synthetic_tests": 2,
+  "query_devices_checked": [
+    "cpu",
+    "cuda"
+  ],
+  "regenerated_table_fragments": 8,
+  "regenerated_csv_summaries": 2,
+  "table_csv_comparison": "byte-identical",
+  "regenerated_figures": 4,
+  "figure_visual_review": "passed",
+  "original_export_hashes_checked": 76,
+  "python": "3.8.20",
+  "numpy": "1.24.3",
+  "numba": "0.58.1",
+  "torch": "2.4.1+cu121",
+  "scope": "Local release checks; no new training, clinical evaluation, or original posterior/witness audit."
+}

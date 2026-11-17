@@ -1,0 +1,24 @@
+Recorded 2026-11-08 after the first 24-record diagnostic and stronger-baseline
+audit. This is adaptive exploratory follow-up; original protocol/results stay.
+
+1. Evaluate fixed, untrained dual queries before learning any multipliers.
+   Query sets per sign: {1}, {0.3,1,3}, {0.1,0.3,1,3,10,30}.
+   Use all 24 inputs and nonzero eta values from the original grid. Reuse
+   queries across tolerances. Include a zero-tilt solve and valid framewise
+   unconstrained bounds; no projection or backward pass needed. Report every
+   query budget, no selection of a winning budget after observation.
+   Any multiplier yields a mathematical bound: learning affects tightness,
+   not validity. This general fact and learned-multiplier prediction are
+   established prior art (Demelas et al., ICML 2024; Parjadis et al., CP 2024).
+   Do not describe a learned multiplier by itself as novel distillation.
+
+2. Assess topology identification separately from site-score sign.
+   A topology j can be excluded if its outer upper confidence is below the
+   maximum outer lower confidence of its competitors. A constructive witness
+   for j uses its feasible upper path and competitors' feasible lower paths;
+   apply the original canonical tie order. A feasible alternative winner is
+   model ambiguity, not proof that a clinician's explanation is wrong.
+
+3. Independently verify immutable v1 inputs/results after follow-up.
+   No disease labels, phase annotations, waveform inference, GPU training,
+   final reserve arrays, changed cutoff, or publication revision in this step.

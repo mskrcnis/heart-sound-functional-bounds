@@ -1,0 +1,65 @@
+{
+  "status": "passed",
+  "models": 12,
+  "student_records": 288,
+  "teacher_nominal_records": 120,
+  "max_teacher_nominal_error": 0.0,
+  "max_student_forward_error": 0.0,
+  "max_query_error": 0.0,
+  "max_metric_error": 8.620868341413512e-08,
+  "max_response_error": 0.0,
+  "means": {
+    "kl": {
+      "emission_kl": 0.4529012104152872,
+      "score_mae": 0.042580376497451944,
+      "global_bound_mae": 0.041802052890676254,
+      "window_bound_mae": 0.03230134538854917,
+      "primary_bound_mae": 0.03705169913961271,
+      "support_gap_mae": 0.04107686922719075,
+      "response_mae": 0.001684525574905192
+    },
+    "score": {
+      "emission_kl": 0.4544532961617988,
+      "score_mae": 0.037497390190902126,
+      "global_bound_mae": 0.0368028642500306,
+      "window_bound_mae": 0.03277682181495603,
+      "primary_bound_mae": 0.03478984303249331,
+      "support_gap_mae": 0.041789040733246026,
+      "response_mae": 0.0016965992257865715
+    },
+    "confidence": {
+      "emission_kl": 0.45788645988010224,
+      "score_mae": 0.043910598778044325,
+      "global_bound_mae": 0.04327558848738133,
+      "window_bound_mae": 0.02975730755818755,
+      "primary_bound_mae": 0.03651644802278445,
+      "support_gap_mae": 0.037470571326264544,
+      "response_mae": 0.0016335167463729647
+    },
+    "query": {
+      "emission_kl": 0.45782810693164544,
+      "score_mae": 0.04398189292471274,
+      "global_bound_mae": 0.04309327338332535,
+      "window_bound_mae": 0.029698825946297903,
+      "primary_bound_mae": 0.03639604966481163,
+      "support_gap_mae": 0.03739217513809782,
+      "response_mae": 0.001668367661193878
+    }
+  },
+  "engineering_gate_passed": false,
+  "improvement": {
+    "kl": 0.01769553057015172,
+    "score": -0.046168838152507385,
+    "confidence": 0.0032970993755387923
+  },
+  "response_gain": -0.021334899013613295,
+  "paired_seed_wins": 0,
+  "emission_ratio": 1.0108785236229343,
+  "sources": {
+    "phase10/src/audit_query_warmstart.py": "52062742a4732afe82796ec9a20f8fd85a790851b9eeeaf73d3dcc4ef4f717ae",
+    "phase10/src/audit_query_pilot.py": "7704a37861a9aaaa0e3542b7f82905f5c30c45a08e416fe57b225e4dc2caddb9",
+    "phase10/results/query_gap_warmstart_v1/run.json": "5f06262e1206b8476311dece7b7821406860880b357727a77246466a8c9c2ca7",
+    "phase10/results/query_gap_warmstart_v1/summary.json": "6f8d3679681d60cf1578a2425e82a90ed993a0efd90d64f13d85245c41ea94c4"
+  },
+  "scope": "All saved-posterior reinference and independent arithmetic; same exhaustive-tested DP oracle"
+}

@@ -1,0 +1,71 @@
+HISTORICAL PROPOSAL. Subsequent status, 2026-11-08: both declared training
+pilots failed their engineering gates; this loss is rejected for further scaling.
+See NOVELTY_DECISION_v2.txt. The original pre-training formulation follows.
+
+Candidate generated from phase10 findings, 2026-11-08.
+Status: mathematical formulation and differentiable implementation prototype;
+not yet a trained-model result, novelty claim, or clinical guarantee.
+
+Question
+Can a small physiological student preserve a teacher's decision-uncertainty
+curve while being allowed to disagree on unidentifiable latent paths?
+The pilot makes this question concrete: at eta=.005, 12/24 records have a
+resolved site-score sign yet constructive competing winning topologies.
+
+Proposed transfer target
+For a fixed input, topology m, model theta, and additive reward R_theta(q), let
+  V_theta(lambda)=max_q [L_theta(q)+lambda R_theta(q)],
+  G_theta(lambda)=[V_theta(lambda)-V_theta(0)]/(lambda T), lambda!=0.
+For a fixed finite set Lambda with positive and negative values, define
+  upper_theta(eta)=min_{lambda>0} [G_theta(lambda)+eta/lambda],
+  lower_theta(eta)=max_{lambda<0} [G_theta(lambda)+eta/lambda].
+These are weak-duality outer bounds on R/T for paths with log-score loss at
+most eta*T. They are valid without a projection pass. The confidence reward
+uses all frames; fixed-window rewards use zero weights outside the window.
+
+Candidate loss
+Match G_student to G_teacher on topology/reward/query tuples, alongside a
+declared ordinary emission-KL control. A starting query set is {-1,+1}; it is
+motivated by the successful untrained bound baseline, not tuned on outcomes.
+Use an L1 or smooth-L1 discrepancy with fixed weights. A new loss name does
+not establish originality. Compare against ordinary KL, hard-state learning,
+nominal-score-only matching and structured marginal KD before scaling.
+
+Pointwise transfer property (elementary consequence, not claimed new theorem)
+If max_{lambda in Lambda}|G_S(lambda)-G_T(lambda)|<=delta for an input, then
+the finite-query lower and upper envelopes each differ by <=delta for EVERY
+eta>=0. Proof: the eta/lambda terms are identical, and min/max are 1-Lipschitz
+in the sup norm. For max-murmur confidence minus healthy confidence, separate
+topology error bounds imply a <=delta_M+delta_H difference for each endpoint.
+This property concerns these finite-query OUTER bounds, not exact extrema,
+true physiological states, disease correctness or unseen-input guarantees.
+It does not cover extra student-specific clipping/projection operations unless
+those operations are separately controlled. A low mean training loss does
+not establish the assumed pointwise error bound on future inputs.
+
+Why it is a different target from ordinary KD
+Emission KL matches local distributions; nominal-score matching transfers one
+chosen pair of paths. This target matches changes in globally optimized path
+values under a task-specific additive tilt, thereby controlling a whole family
+of finite-query uncertainty bounds. Student and teacher paths need not agree.
+It remains closely related to energy matching, structured KD, decision-focused
+compression and uncertainty distillation. Those comparisons must be resolved
+before describing the formulation as novel.
+
+Implementation boundary
+The prototype treats duration and transition potentials as FIXED inputs. It
+differentiates the selected support paths using the usual max-envelope rule.
+At ties it returns a selected subgradient, not a unique derivative. Non-smooth
+differences of maxima are not convex in network parameters. Existing heart-
+rate selection and duration truncation are discrete; they cannot silently be
+treated as differentiable. Full-record training and recomputed-duration
+inference need an explicit consistent design before an experiment.
+
+Gate before any full model campaign
+1. Verify values against the independent DAG implementation and gradients by
+   finite differences away from ties, including float32 input and CUDA smoke.
+2. Read the closest structured uncertainty/energy/credal distillation methods.
+3. Freeze a bounded train/development comparison that includes the simple
+   controls. Use continuous training recordings; do not decode the existing
+   gap-collapsed training cache as though it were uninterrupted physiology.
+4. Retain all old negative results. No phase9 reserve reuse as confirmation.

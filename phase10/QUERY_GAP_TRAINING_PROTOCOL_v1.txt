@@ -1,0 +1,89 @@
+BOUNDED SUPPORT-GAP DISTILLATION PILOT — frozen before waveform reads/fitting
+8 November 2026
+
+Purpose and status
+Test whether a particular structured functional target improves out-of-fit
+teacher-bound fidelity beyond ordinary emission KL and nominal-score matching.
+This is adaptive development after the 24-record decoder study. It cannot
+establish disease superiority, independent confirmation, or original invention.
+The previous phase9 final reserve and manuscripts remain frozen. Generic weak
+duality, max-envelope gradients and uncertainty distillation are prior art.
+
+Selection and continuous input
+Read only identifier, site, selected, group and role columns of the original
+inventory. Within train, choose one selected AV/PV/TV/MV record per linked
+person by this site order, then lexical record order. Order people by SHA256
+of 'phase10-querygap-v1:' + group_id. Take the first 96: first 80 fit, last 16
+monitor. No label or annotation criterion. Development uses the same 24
+people/records already fixed in development_inputs_v1/selection_manifest.json.
+Seal this selection and all input hashes before waveform reads. Verify each
+WAV against official SHA256SUMS. Use its first min(6, duration) seconds through
+the unchanged original frontend. Retain every frame; never decode the old
+annotation-gap-collapsed training cache. Fail visibly on invalid records; no
+silent deletion or replacement. Roles must be disjoint by linked person.
+
+Teacher and student
+Teacher: mean of the five frozen phase9 GRU teacher predictions. Verify all
+checkpoint hashes and their existing inner-fit/validation group provenance.
+This teacher was fitted on outer-training records; the 16 monitor people are
+only excluded from NEW student fitting, not from teacher training. No OOF or
+independent monitor claim. Targets use T=1 mean softmax logits for decoder
+functions, and mean per-model T=2 softmax logits for emission KD.
+Student: unchanged 4877-parameter PhysiologicalStudent, fresh random start.
+Seeds: 20261113, 20261114, 20261115. Identical initialization and per-epoch
+record order across arms within each seed. No data augmentation or crops.
+
+Three arms, all retained
+1. kl: mean per-record, per-frame KL(teacher_T2 || student_T2) times 2^2.
+2. score: kl + 10 * smooth_L1(student_site_score, teacher_site_score, beta=.01).
+3. query: kl + 10 * mean smooth_L1(G_student, G_teacher, beta=.01).
+The site score is max murmur nominal confidence minus healthy confidence.
+It is neither a calibrated diagnosis nor the quality-gated referral decision.
+For query, use all four topologies, lambda=-1,+1, and three rewards: all frames,
+first floor(T/2) frames, remaining frames. Normalize all rewards by FULL T.
+Thus each record contributes 4*3*2=24 support-gap targets. No extra clipping,
+projection pass or selection-aware constraint is included in these envelopes.
+
+Consistent graph treatment
+Both teacher and student construct their OWN duration potentials using the
+unchanged original heart-rate and systolic-lag estimators on their current
+T=1 posterior. These choose integer argmax lag indices; durations are locally
+constant between discrete switches. Recompute student graphs on every forward
+pass. Hold those discrete choices and resulting potentials fixed during the
+selected-path derivative. This is a piecewise derivative, not differentiation
+through argmax, nor a globally smooth objective. The student needs no teacher
+at inference. Use the tested float64 legacy-boundary DAG for all path solves;
+no bitwise float32 decoder equivalence is asserted.
+
+Fixed training budget
+20 epochs; batch size 8; Adam lr=.001; default betas/eps; no weight decay,
+gradient clipping, early stopping, AMP or scheduler. Use final epoch only.
+Record every epoch's training losses and monitor emission KL. Monitor values
+never select a checkpoint/hyperparameter. Fail on nonfinite losses/gradients.
+Save every final model, history, original initialization hash, data-order hash,
+and all 24 development posteriors. No tuning after viewing results.
+
+Evaluation and predeclared engineering gate
+Development n=24 already-consumed people, one 6-second recording each. Report
+each seed and arm, with per-record values. Primary bound error is the equal
+average of (a) native global site-contrast lower/upper endpoint MAE and (b)
+per-topology first/second-half reward lower/upper endpoint MAE, at eta=.005.
+These measure fidelity to finite-query TEACHER OUTER bounds, not true extrema
+or disease truth. Also report T=2 emission KL, nominal score MAE, and three-way
+sign-state agreement (positive/nonpositive/unresolved) for eta .001,.005,.01,.05.
+The same two queries are reused across eta; eta values are not replicates.
+
+Pass only if query's primary mean error across three seeds is at least 10%
+below BOTH kl and score, and query improves over BOTH controls in at least two
+of three paired seeds, and its mean emission KL is no more than 5% above kl.
+This is a descriptive engineering gate, not a p-value or clinical-superiority
+criterion. Retain failures and tradeoffs. Even a pass requires stronger controls
+(including structured-marginal KD), broader inputs and an unused confirmation
+set before a new-method publication claim. No post-hoc favorable subset.
+
+Implementation verification
+Run selected-path value/gradient/CPU/CUDA tests after vectorization. Check
+captured potentials against the prior saved diagnostic arrays. Verify teacher
+and development inference denominators, provenance, finite gradients, matching
+initialization/orders, and independently reconstruct final saved-posterior
+metrics before interpreting the experiment. Preserve setup failures.

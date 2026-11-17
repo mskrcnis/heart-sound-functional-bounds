@@ -1,0 +1,147 @@
+{
+  "status": "complete",
+  "query_results": [
+    {
+      "eta": 0.001,
+      "query_set": "one",
+      "dp_calls": 12,
+      "sign_certified": 21,
+      "median_width": 0.01247307420870486,
+      "median_width_ratio_vs_full": 1.1168636816996416,
+      "median_seconds": 0.0061567555530928075
+    },
+    {
+      "eta": 0.001,
+      "query_set": "three",
+      "dp_calls": 28,
+      "sign_certified": 21,
+      "median_width": 0.011983817901695892,
+      "median_width_ratio_vs_full": 1.0831399025654158,
+      "median_seconds": 0.013010712980758399
+    },
+    {
+      "eta": 0.001,
+      "query_set": "six",
+      "dp_calls": 52,
+      "sign_certified": 21,
+      "median_width": 0.011983817901695892,
+      "median_width_ratio_vs_full": 1.0831399025654158,
+      "median_seconds": 0.02375637652585283
+    },
+    {
+      "eta": 0.005,
+      "query_set": "one",
+      "dp_calls": 12,
+      "sign_certified": 20,
+      "median_width": 0.027696379967865892,
+      "median_width_ratio_vs_full": 1.1553703298676228,
+      "median_seconds": 0.006040290929377079
+    },
+    {
+      "eta": 0.005,
+      "query_set": "three",
+      "dp_calls": 28,
+      "sign_certified": 20,
+      "median_width": 0.025969883810250227,
+      "median_width_ratio_vs_full": 1.0767456627686014,
+      "median_seconds": 0.013225081958808005
+    },
+    {
+      "eta": 0.005,
+      "query_set": "six",
+      "dp_calls": 52,
+      "sign_certified": 20,
+      "median_width": 0.02568352722632561,
+      "median_width_ratio_vs_full": 1.0767456627686014,
+      "median_seconds": 0.023903321474790573
+    },
+    {
+      "eta": 0.01,
+      "query_set": "one",
+      "dp_calls": 12,
+      "sign_certified": 17,
+      "median_width": 0.046855282224824935,
+      "median_width_ratio_vs_full": 1.3299912085490846,
+      "median_seconds": 0.00606311101000756
+    },
+    {
+      "eta": 0.01,
+      "query_set": "three",
+      "dp_calls": 28,
+      "sign_certified": 17,
+      "median_width": 0.039739927238478245,
+      "median_width_ratio_vs_full": 1.1555125015166037,
+      "median_seconds": 0.01306622801348567
+    },
+    {
+      "eta": 0.01,
+      "query_set": "six",
+      "dp_calls": 52,
+      "sign_certified": 17,
+      "median_width": 0.039605238659330855,
+      "median_width_ratio_vs_full": 1.1326519895459466,
+      "median_seconds": 0.023831175465602428
+    },
+    {
+      "eta": 0.05,
+      "query_set": "one",
+      "dp_calls": 12,
+      "sign_certified": 3,
+      "median_width": 0.16750735510645248,
+      "median_width_ratio_vs_full": 1.9940799223018697,
+      "median_seconds": 0.006088496476877481
+    },
+    {
+      "eta": 0.05,
+      "query_set": "three",
+      "dp_calls": 28,
+      "sign_certified": 5,
+      "median_width": 0.09108755715161732,
+      "median_width_ratio_vs_full": 1.1259345716471487,
+      "median_seconds": 0.013072242552880198
+    },
+    {
+      "eta": 0.05,
+      "query_set": "six",
+      "dp_calls": 52,
+      "sign_certified": 6,
+      "median_width": 0.0863431093387868,
+      "median_width_ratio_vs_full": 1.0509112888172183,
+      "median_seconds": 0.02395508548943326
+    }
+  ],
+  "winner_results": [
+    {
+      "eta": 0.001,
+      "outer_single_winner": 17,
+      "witnessed_multiple_winners": 5,
+      "stable_score_but_witnessed_multiple_winners": 3
+    },
+    {
+      "eta": 0.005,
+      "outer_single_winner": 6,
+      "witnessed_multiple_winners": 16,
+      "stable_score_but_witnessed_multiple_winners": 12
+    },
+    {
+      "eta": 0.01,
+      "outer_single_winner": 5,
+      "witnessed_multiple_winners": 18,
+      "stable_score_but_witnessed_multiple_winners": 12
+    },
+    {
+      "eta": 0.05,
+      "outer_single_winner": 4,
+      "witnessed_multiple_winners": 20,
+      "stable_score_but_witnessed_multiple_winners": 4
+    }
+  ],
+  "clinical_labels_read": false,
+  "final_reserve_arrays_read": 0,
+  "timing_scope": "One record, four topologies, one eta; potential preparation + base and fixed dual solves. JIT excluded. No neural/audio frontend. Single observational pass.",
+  "sources": {
+    "phase10/src/cheap_queries_and_winners.py": "715b94e4c0d507120a2b29f42f5a19c768dda0ac85f8bab59dff220b87147b99",
+    "phase10/FOLLOWUP_v1.txt": "4954edd0d132becc6d1e20b272f9787cb413629dc543f6cd52b37d885b955a28",
+    "phase10/results/functional_bounds_v1/run.json": "0451dd7356269c336a3fe2775f020ec66feab17e37c8987ca591194c7cd030dd"
+  }
+}

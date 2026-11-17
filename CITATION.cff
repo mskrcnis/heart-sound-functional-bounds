@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "Please cite this software and the associated manuscript when using this work."
+type: software
+title: "Heart-sound functional bounds"
+version: 1.0.0
+date-released: 2026-11-17
+repository-code: "https://github.com/mskrcnis/heart-sound-functional-bounds"
+url: "https://github.com/mskrcnis/heart-sound-functional-bounds"
+authors:
+  - family-names: "Mallidi"
+    given-names: "S Kumar Reddy"
+    orcid: "https://orcid.org/0000-0001-5908-8316"
+  - family-names: "Koduri"
+    given-names: "Shirin Bhanu"
+  - family-names: "Penmetsa"
+    given-names: "Ravi Kiran varma"
+  - family-names: "Ramisetty"
+    given-names: "Rajeswara Rao"
+abstract: >-
+  Code and aggregate evidence for model-conditional decision stability and
+  latent explanation ambiguity in neural heart-sound screening, including
+  functional bounds, projection controls, feasible witnesses, and a controlled
+  support-gap distillation study. Both distillation criteria failed; the
+  repository does not assert clinical superiority.
+keywords:
+  - heart sounds
+  - hidden semi-Markov models
+  - explainability
+  - functional bounds
+  - knowledge distillation

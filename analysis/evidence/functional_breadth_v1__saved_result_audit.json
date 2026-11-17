@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "record_conditions": 768,
+  "distinct_people": 48,
+  "topology_conditions": 3072,
+  "witnesses_rescored": 6144,
+  "max_log_score_error": 2.091837814077735e-11,
+  "max_confidence_error": 0.0,
+  "all_source_and_output_hashes_passed": true,
+  "conditions_passing": 16,
+  "engineering_gate_passed": true,
+  "sources": {
+    "phase10/src/audit_functional_breadth.py": "ae055827f2f962215d5b8af1052efec88a5b11f721096f9726624955276e4244",
+    "phase10/results/functional_breadth_v1/run.json": "b6c10a1e041282ef435549387fc516eac94a1457139175f3628c6b4d29ea016a",
+    "phase10/results/functional_breadth_v1/summary.json": "8ca3038a84e783864da2c6cfcb7655967611715526be0bbf76860c4203fdb7ed"
+  },
+  "scope": "All saved witnesses, base optimum values, interval arithmetic and winner summaries; no clinical validation"
+}

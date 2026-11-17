@@ -1,0 +1,85 @@
+{
+  "name": "physiological_emission_compression_v1",
+  "seeds": [
+    20261107,
+    20261108,
+    20261109
+  ],
+  "alphas": [
+    0.0,
+    0.5,
+    1.0
+  ],
+  "inner_folds": 5,
+  "budgets_seconds": [
+    20,
+    "full"
+  ],
+  "decoder": "corrected_traceback_only",
+  "architecture": {
+    "input_channels": 40,
+    "width": 24,
+    "classes": 5,
+    "kernel_size": 3,
+    "dilations": [
+      1,
+      2,
+      4,
+      8,
+      16
+    ],
+    "activation": "GELU",
+    "normalization": "per_time_channel_LayerNorm",
+    "dropout": 0.0
+  },
+  "training": {
+    "batch_size": 32,
+    "validation_batch_size": 128,
+    "crop_frames": 300,
+    "learning_rate": 0.001,
+    "max_epochs": 100,
+    "patience": 10,
+    "temperature": 2.0,
+    "optimizer": "Adam",
+    "amp": false,
+    "checkpoint_selection": "held_fold_weighted_hard_CE"
+  },
+  "torch_threads": 4,
+  "teacher_directory": "results/hsmm_baseline_v1",
+  "corrected_comparator_directory": "results/hsmm_traceback_sensitivity_v1",
+  "output_directory": "results/physiological_distill_v1",
+  "teacher_checkpoint_sha256": {
+    "fold_0.pt": "03ca98d2287a61f29c1c0eccdc6b3d1b2640927c571cfb07e419b9a2b083c337",
+    "fold_1.pt": "17737a5cc3e48b0d89e84fb99a18bd0fd7593bfc8f13ff049b8b395776e63591",
+    "fold_2.pt": "dc0da1e5bf7e1a43fdff2d8dcd1c4f37621b91359a5b6531ee0ac2f19f56c3d3",
+    "fold_3.pt": "3b7f178797ec1bc802b594bc5f5d7f5af7ac9b184a8ae06247f91087e02e9732",
+    "fold_4.pt": "2479fd80515548182fdd148129c0ca6daaa78243b638eeefb0c22925a4233afc"
+  },
+  "source_sha256": {
+    "src/physiological_distill.py": "f888ee42bbb0a0fe21c32cd78f7a857e41d2e3a2822db5dada9f60b931ad5874",
+    "tests/test_physiological_distill.py": "176ec7a58b794319086f64b2b92da87549a3d802f6435dc80db43d014b07f855",
+    "PHYSIOLOGICAL_DISTILLATION_PROTOCOL.md": "1fb6746bc188a87d2ef349cc9150e292756e5a9983b5f2be40928835d2f9018f",
+    "src/hsmm_baseline.py": "3f58575db60040bf95ac6d342339d7044693e1605d72af3cce642ef557383de0",
+    "src/hsmm_traceback_sensitivity.py": "f2341e096385d3e3982f2016c5d3b0270d14b59138af4020dbd41d0b727817ee",
+    "src/hsmm_traceback_corrected.pyx": "1506036595680695fbd56e8b9520052368c93ea93ed94ae90b38a695c150c847",
+    "src/hsmm_score_accounting.py": "48a9b63e20be1ebdf7e9897974d9da24131ee5d8759e5d9608a6600047671c17",
+    "src/hsmm_site_replay.py": "411b72bd7302fac048c6c110135b909c89880947f0d4f0e48b23f09ba652b239",
+    "configs/hsmm_baseline.json": "c743053cf9f6d66fc7809eb4286e3d98a1b21ea95b72b2a176f08821bbfbd919",
+    "HSMM_PROTOCOL.md": "85b5cf5c319a847f7593dfd0e1a1a3e0b23524e2cf1738e5d3aafa0b05f6c29f",
+    "HSMM_TRACEBACK_PROTOCOL.md": "bc605839961060d862a70178d30194fef35149cdeff21456283ce124497ae68a",
+    "HSMM_SCORE_ACCOUNTING_PROTOCOL.md": "8e5e4c463bafb20ebb2a9d6ee78790252696cb982830a08d8c113520c1af8a1c",
+    "HSMM_LICENSE.md": "960ed22f2a26df33c08d80d382d5476091c6f8cbd110ac8ef2b525b9cda2d0ff",
+    "third_party/parallel-hsmm-murmur/src/neural_networks.py": "6953ef857bccb267dfc060c4d5929d0bb53766bea5e6961c83d97a0021ae23a0",
+    "third_party/parallel-hsmm-murmur/src/segmenter.py": "4191848a42bfb89f4613f8276bf50db5997c5a29dc4c9dddd942e11221201790",
+    "results/metadata/manifest.json": "f907ea746b54b5d3acff9be9f7684c42cc6f7010fef9b59bd571b9065f5e85d3",
+    "results/metadata/split_manifest.csv": "5a5fe971d78a06c137151a56b58fac1d3c57c4adde979b37238bf1c7427c1b36",
+    "results/metadata/record_inventory.csv": "a913a0c3924bd7e094ffbef0bb77a245c3da2b4dd5af4b803b6855ec9099b82a",
+    "results/hsmm_baseline_v1/run.json": "a395185d9e9179db213e7fffe91d39bff807a85b7d7a4d81ce16b2dbf632ab24",
+    "results/hsmm_training_cache_v1/manifest.json": "f5a84fbe82fc90147617f1ebcfc8ca1ab808dbfe0b0ef091a5ccdc26f19a9a4a",
+    "results/hsmm_traceback_sensitivity_v1/run.json": "de36bdb3e555e3926d088a8a82daefdb01c76b90c5ee87a83d845f3f3d4a64de",
+    "results/hsmm_traceback_sensitivity_v1/metrics.csv": "6f9e874e562a9ccf73e4eb31c4adc9947214db5e1d538065cd2d323187b86983",
+    "results/hsmm_traceback_sensitivity_v1/predictions.csv": "cec53ef2dbba578ad243b4fa40887304bef07aa8dbb4bb44558bd1fef6746fb3"
+  },
+  "reserved_test_access": "forbidden",
+  "clinical_evaluation_requires_all_fits": true
+}

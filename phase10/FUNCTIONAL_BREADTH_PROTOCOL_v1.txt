@@ -1,0 +1,51 @@
+FUNCTIONAL-BOUND BREADTH CHECK — frozen before new posterior-array reads
+8 November 2026
+
+Purpose
+Assess the useful non-learning decoder result beyond the initial 24 people and
+one model/budget. This is an internal development extension, not external
+validation or pristine clinical confirmation. All pilot_validation participants
+were already part of phase9 development. No disease labels or phase annotations
+are needed. Do not use final_corroboration_v1 or reserved_test arrays.
+
+Selection
+From identifier/site/role/selected inventory columns, exclude the 24 group IDs
+in the original phase10 selection. Restrict to pilot_validation and selected
+AV/PV/TV/MV records. Choose one record per linked person by this site order then
+lexical record. Order remaining groups by SHA256('phase10-breadth-v1:'+group_id)
+and take 48. Seal selection, all record-array references and source hashes
+before reading the new arrays. No replacement based on predictions or labels.
+
+Sixteen repeated conditions on the same 48 people
+Models: float and INT8 teacher ensembles from hsmm_int8_control_v1; short
+physiological students with alpha=0 and alpha=1 for seeds 20261107, 20261108,
+20261109. Budgets: 20 seconds and full recordings. Thus 8 models * 2 budgets,
+768 record-condition evaluations, but only 48 distinct people. Keep conditions
+separate; do not count repeated conditions as independent patients.
+
+Fixed calculations
+All four topologies, eta=.005, unchanged float64 legacy-boundary DAG, original
+potential construction, adaptive dual bisection 14 iterations. Comparators:
+frame-state projection; segment/transition-edge projection; functional bounds;
+their intersection with the segment bounds; fixed queries {-1,+1} with simple
+row-wise confidence limits and no learned parameters. Retain every comparator.
+Measure native site-score sign resolution, interval widths and constructive
+both-sign paths. Report possible/witnessed winning topologies and stable-sign
+cases with multiple witnessed winners. Neither score sign nor winner certifies
+disease correctness, true physiology, audio robustness or referral safety.
+
+Audit and gate
+Verify each selected array and raw-posterior hash against its frozen source
+ledger. Reconstruct every feasible lower/upper witness directly from segments
+and emissions, check deficit feasibility, interval containment and saved-path
+confidence. Retain witnesses and their hashes. Missing/invalid arrays are
+visible failures with no replacement; the engineering gate fails if any occur.
+Report all denominators and every one of the 16 conditions.
+
+Pass the descriptive breadth gate only if at least 12/16 conditions have >=50%
+median paired width reduction for intersected functional/segment bounds versus
+segment projection, plus at least five additional resolved signs among 48 in
+that condition. This is NOT a statistical significance criterion or evidence
+that generic Lagrangian bounds are new. No clinical accuracy analysis or model
+selection. Parameterized graph semantics and numerical-guard limitations from
+PROTOCOL_v1.txt remain in force. Preserve the failed distillation experiments.

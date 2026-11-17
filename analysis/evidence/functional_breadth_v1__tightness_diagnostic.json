@@ -1,0 +1,167 @@
+{
+  "status": "complete",
+  "posthoc_diagnostic": true,
+  "conditions": [
+    {
+      "model": "teacher_float",
+      "budget": 20,
+      "records": 48,
+      "resolved": 42,
+      "proved_both_signs": 4,
+      "remaining_undetermined": 2,
+      "median_outer_inner_gap": 0.0012865251154098867,
+      "max_outer_inner_gap": 0.012465276124226599
+    },
+    {
+      "model": "teacher_float",
+      "budget": "full",
+      "records": 48,
+      "resolved": 43,
+      "proved_both_signs": 4,
+      "remaining_undetermined": 1,
+      "median_outer_inner_gap": 0.0011585899751658246,
+      "max_outer_inner_gap": 0.012465276124226599
+    },
+    {
+      "model": "teacher_int8",
+      "budget": 20,
+      "records": 48,
+      "resolved": 42,
+      "proved_both_signs": 3,
+      "remaining_undetermined": 3,
+      "median_outer_inner_gap": 0.0013368078730479627,
+      "max_outer_inner_gap": 0.016545125351364043
+    },
+    {
+      "model": "teacher_int8",
+      "budget": "full",
+      "records": 48,
+      "resolved": 43,
+      "proved_both_signs": 3,
+      "remaining_undetermined": 2,
+      "median_outer_inner_gap": 0.0010661655847540308,
+      "max_outer_inner_gap": 0.016545125351364043
+    },
+    {
+      "model": "hard_20261107",
+      "budget": 20,
+      "records": 48,
+      "resolved": 42,
+      "proved_both_signs": 6,
+      "remaining_undetermined": 0,
+      "median_outer_inner_gap": 0.0012340258401555837,
+      "max_outer_inner_gap": 0.010444654136759102
+    },
+    {
+      "model": "hard_20261107",
+      "budget": "full",
+      "records": 48,
+      "resolved": 41,
+      "proved_both_signs": 6,
+      "remaining_undetermined": 1,
+      "median_outer_inner_gap": 0.0011739551308474483,
+      "max_outer_inner_gap": 0.010444654136759102
+    },
+    {
+      "model": "kd_20261107",
+      "budget": 20,
+      "records": 48,
+      "resolved": 45,
+      "proved_both_signs": 2,
+      "remaining_undetermined": 1,
+      "median_outer_inner_gap": 0.0011322652436334124,
+      "max_outer_inner_gap": 0.02179977381317888
+    },
+    {
+      "model": "kd_20261107",
+      "budget": "full",
+      "records": 48,
+      "resolved": 45,
+      "proved_both_signs": 2,
+      "remaining_undetermined": 1,
+      "median_outer_inner_gap": 0.0011087727523829138,
+      "max_outer_inner_gap": 0.02179977381317888
+    },
+    {
+      "model": "hard_20261108",
+      "budget": 20,
+      "records": 48,
+      "resolved": 46,
+      "proved_both_signs": 0,
+      "remaining_undetermined": 2,
+      "median_outer_inner_gap": 0.0011705266987404594,
+      "max_outer_inner_gap": 0.005232440531105997
+    },
+    {
+      "model": "hard_20261108",
+      "budget": "full",
+      "records": 48,
+      "resolved": 46,
+      "proved_both_signs": 0,
+      "remaining_undetermined": 2,
+      "median_outer_inner_gap": 0.001174312401327815,
+      "max_outer_inner_gap": 0.005232440531105997
+    },
+    {
+      "model": "kd_20261108",
+      "budget": 20,
+      "records": 48,
+      "resolved": 44,
+      "proved_both_signs": 4,
+      "remaining_undetermined": 0,
+      "median_outer_inner_gap": 0.0012068480830881023,
+      "max_outer_inner_gap": 0.007872375203234694
+    },
+    {
+      "model": "kd_20261108",
+      "budget": "full",
+      "records": 48,
+      "resolved": 44,
+      "proved_both_signs": 4,
+      "remaining_undetermined": 0,
+      "median_outer_inner_gap": 0.001028859360037604,
+      "max_outer_inner_gap": 0.007872375203234694
+    },
+    {
+      "model": "hard_20261109",
+      "budget": 20,
+      "records": 48,
+      "resolved": 44,
+      "proved_both_signs": 3,
+      "remaining_undetermined": 1,
+      "median_outer_inner_gap": 0.001216863482398356,
+      "max_outer_inner_gap": 0.005457586242629098
+    },
+    {
+      "model": "hard_20261109",
+      "budget": "full",
+      "records": 48,
+      "resolved": 44,
+      "proved_both_signs": 3,
+      "remaining_undetermined": 1,
+      "median_outer_inner_gap": 0.0010834305334963545,
+      "max_outer_inner_gap": 0.006740277261504057
+    },
+    {
+      "model": "kd_20261109",
+      "budget": 20,
+      "records": 48,
+      "resolved": 45,
+      "proved_both_signs": 2,
+      "remaining_undetermined": 1,
+      "median_outer_inner_gap": 0.0011366632179826142,
+      "max_outer_inner_gap": 0.004730092722983303
+    },
+    {
+      "model": "kd_20261109",
+      "budget": "full",
+      "records": 48,
+      "resolved": 45,
+      "proved_both_signs": 2,
+      "remaining_undetermined": 1,
+      "median_outer_inner_gap": 0.0009555667410274249,
+      "max_outer_inner_gap": 0.004730092722983303
+    }
+  ],
+  "total_remaining_undetermined": 19
+}

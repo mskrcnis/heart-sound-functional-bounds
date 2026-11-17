@@ -1,0 +1,69 @@
+{
+  "status": "passed",
+  "witnesses_rescored": 960,
+  "max_log_score_error": 7.503331289626658e-12,
+  "max_confidence_error": 0.0,
+  "synthetic_instances": 30,
+  "synthetic_tolerances": 4,
+  "source_hashes_passed": true,
+  "comparison_is_post_initial_results": true,
+  "results": [
+    {
+      "eta": 0.0,
+      "segment_certified": 24,
+      "dual_and_segment_certified": 24,
+      "additional_vs_segment": 0,
+      "median_width_reduction_vs_segment": null,
+      "median_segment_width": 0.0,
+      "median_dual_segment_width": 4.000000053405728e-10,
+      "median_segment_seconds": 0.003650898579508066
+    },
+    {
+      "eta": 0.001,
+      "segment_certified": 18,
+      "dual_and_segment_certified": 21,
+      "additional_vs_segment": 3,
+      "median_width_reduction_vs_segment": 0.7055944677541254,
+      "median_segment_width": 0.034123192942572544,
+      "median_dual_segment_width": 0.011010688951221814,
+      "median_segment_seconds": 0.003652039507869631
+    },
+    {
+      "eta": 0.005,
+      "segment_certified": 4,
+      "dual_and_segment_certified": 20,
+      "additional_vs_segment": 16,
+      "median_width_reduction_vs_segment": 0.8559708032746446,
+      "median_segment_width": 0.1760993379411775,
+      "median_dual_segment_width": 0.023655170921560553,
+      "median_segment_seconds": 0.0036873790668323636
+    },
+    {
+      "eta": 0.01,
+      "segment_certified": 3,
+      "dual_and_segment_certified": 17,
+      "additional_vs_segment": 14,
+      "median_width_reduction_vs_segment": 0.8794506563161162,
+      "median_segment_width": 0.29983865864265347,
+      "median_dual_segment_width": 0.033987987769619754,
+      "median_segment_seconds": 0.003725822432897985
+    },
+    {
+      "eta": 0.05,
+      "segment_certified": 0,
+      "dual_and_segment_certified": 7,
+      "additional_vs_segment": 7,
+      "median_width_reduction_vs_segment": 0.9066604421518029,
+      "median_segment_width": 0.9358819881308299,
+      "median_dual_segment_width": 0.08217583959590463,
+      "median_segment_seconds": 0.004003643000032753
+    }
+  ],
+  "elapsed_seconds": 2.6167092209216207,
+  "sources": {
+    "phase10/src/audit_and_compare.py": "e7e91e52dae9af640c194d8228f83d9d77f75f7cd3ee2093afb4d21ac07123df",
+    "phase10/src/segment_projection_baseline.py": "1ff307cf69daf90ed09c21c11833696960a3455ca57c7dc2ccd991a235cfc3de",
+    "phase10/tests/test_path_bounds.py": "6e3a671212006daf21b2200e8f404f3af2cc4ae65aa825d7c165af7bf4fede59",
+    "phase10/results/functional_bounds_v1/run.json": "0451dd7356269c336a3fe2775f020ec66feab17e37c8987ca591194c7cd030dd"
+  }
+}

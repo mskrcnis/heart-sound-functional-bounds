@@ -1,0 +1,32 @@
+# Local environments and interpreter caches
+.venv*/
+__pycache__/
+*.py[cod]
+*.nbc
+*.nbi
+.pytest_cache/
+.ipynb_checkpoints/
+
+# External data, upstream checkout and experimental outputs
+phase9/data/
+phase9/results/
+phase9/reviews/
+phase9/third_party/
+phase10/results/
+phase10/logs/
+build/
+*.pt
+*.pth
+*.ckpt
+*.wav
+*.npz
+*.npy
+*.pkl
+*.joblib
+
+# Local configuration and editor state
+.env
+.env.*
+.DS_Store
+.vscode/
+.idea/

@@ -1,0 +1,538 @@
+{
+  "date": "2026-11-17",
+  "description": "Source and evidence export; original research checkout retained unchanged. SHA256 values refer to file bytes.",
+  "files": [
+    {
+      "original_path": "phase10/src/audit_and_compare.py",
+      "release_path": "phase10/src/audit_and_compare.py",
+      "original_sha256": "e7e91e52dae9af640c194d8228f83d9d77f75f7cd3ee2093afb4d21ac07123df",
+      "release_sha256": "e7e91e52dae9af640c194d8228f83d9d77f75f7cd3ee2093afb4d21ac07123df",
+      "change": "unchanged"
+    },
+    {
+      "original_path": "phase10/src/audit_functional_breadth.py",
+      "release_path": "phase10/src/audit_functional_breadth.py",
+      "original_sha256": "ae055827f2f962215d5b8af1052efec88a5b11f721096f9726624955276e4244",
+      "release_sha256": "ae055827f2f962215d5b8af1052efec88a5b11f721096f9726624955276e4244",
+      "change": "unchanged"
+    },
+    {
+      "original_path": "phase10/src/audit_query_pilot.py",
+      "release_path": "phase10/src/audit_query_pilot.py",
+      "original_sha256": "7704a37861a9aaaa0e3542b7f82905f5c30c45a08e416fe57b225e4dc2caddb9",
+      "release_sha256": "7704a37861a9aaaa0e3542b7f82905f5c30c45a08e416fe57b225e4dc2caddb9",
+      "change": "unchanged"
+    },
+    {
+      "original_path": "phase10/src/audit_query_warmstart.py",
+      "release_path": "phase10/src/audit_query_warmstart.py",
+      "original_sha256": "52062742a4732afe82796ec9a20f8fd85a790851b9eeeaf73d3dcc4ef4f717ae",
+      "release_sha256": "52062742a4732afe82796ec9a20f8fd85a790851b9eeeaf73d3dcc4ef4f717ae",
+      "change": "unchanged"
+    },
+    {
+      "original_path": "phase10/src/audit_selection_windows.py",
+      "release_path": "phase10/src/audit_selection_windows.py",
+      "original_sha256": "340417a454f54eeb460b567cbb45d2d92839d4f44c2870301d7e57a583e8b5eb",
+      "release_sha256": "340417a454f54eeb460b567cbb45d2d92839d4f44c2870301d7e57a583e8b5eb",
+      "change": "unchanged"
+    },
+    {
+      "original_path": "phase10/src/cheap_queries_and_winners.py",
+      "release_path": "phase10/src/cheap_queries_and_winners.py",
+      "original_sha256": "715b94e4c0d507120a2b29f42f5a19c768dda0ac85f8bab59dff220b87147b99",
+      "release_sha256": "715b94e4c0d507120a2b29f42f5a19c768dda0ac85f8bab59dff220b87147b99",
+      "change": "unchanged"
+    },
+    {
+      "original_path": "phase10/src/materialize_development.py",
+      "release_path": "phase10/src/materialize_development.py",
+      "original_sha256": "edc7e71f61b9cb08ded6da9fdc772328e480855e61365909521bad5231551987",
+      "release_sha256": "edc7e71f61b9cb08ded6da9fdc772328e480855e61365909521bad5231551987",
+      "change": "unchanged"
+    },
+    {
+      "original_path": "phase10/src/materialize_query_training.py",
+      "release_path": "phase10/src/materialize_query_training.py",
+      "original_sha256": "af4a73e287c8e5a0538bb92d7e6e3876213d0e178faff014f63deea9bf68dc49",
+      "release_sha256": "af4a73e287c8e5a0538bb92d7e6e3876213d0e178faff014f63deea9bf68dc49",
+      "change": "unchanged"
+    },
+    {
+      "original_path": "phase10/src/path_bounds.py",
+      "release_path": "phase10/src/path_bounds.py",
+      "original_sha256": "e004942fbd4f823149ab4f9425dc150ab4afc4d7cadfad5dc94d832ca9ad0e83",
+      "release_sha256": "2b8dcb083cc30a3f1d1ee2460b2c31ea417dc1aa2c3886b6b796dbb2751b87fa",
+      "change": "release notice or portable documentation"
+    },
+    {
+      "original_path": "phase10/src/query_gap_distillation.py",
+      "release_path": "phase10/src/query_gap_distillation.py",
+      "original_sha256": "e115687ed4cec54491fbe4ade8c868605f34b3a5d355a88139b9c3ab49e4e072",
+      "release_sha256": "9e5e150fca437f2733ff2b8503e7037a6ff0c25ba0c2cdf76f769424adb47a34",
+      "change": "release notice or portable documentation"
+    },
+    {
+      "original_path": "phase10/src/query_nominal_control.py",
+      "release_path": "phase10/src/query_nominal_control.py",
+      "original_sha256": "cc5b1ec05d54ede8470d6182c7fe934fc290e68f3443fabf887b9eac5f60dd06",
+      "release_sha256": "cc5b1ec05d54ede8470d6182c7fe934fc290e68f3443fabf887b9eac5f60dd06",
+      "change": "unchanged"
+    },
+    {
+      "original_path": "phase10/src/query_training_common.py",
+      "release_path": "phase10/src/query_training_common.py",
+      "original_sha256": "18f3028eede22154a6ad36cbf0cd41f18e3fbe5f2e712619ac20e0b4a28041c9",
+      "release_sha256": "43b672a2dfd4bc2ed0d6cff4bf8a28be7b2d9d902a78798c587bd068f290cfbc",
+      "change": "release notice or portable documentation"
+    },
+    {
+      "original_path": "phase10/src/report_feasibility.py",
+      "release_path": "phase10/src/report_feasibility.py",
+      "original_sha256": "04244619b468b11a3ae59448655efaa4ba99f9dd6e1adfea337a90d6ecec02d9",
+      "release_sha256": "04244619b468b11a3ae59448655efaa4ba99f9dd6e1adfea337a90d6ecec02d9",
+      "change": "unchanged"
+    },
+    {
+      "original_path": "phase10/src/report_functional_breadth.py",
+      "release_path": "phase10/src/report_functional_breadth.py",
+      "original_sha256": "500b597964b514025ee1910cf414bd74ffa55b8bc702a82046bb6a88ca9c7ac7",
+      "release_sha256": "500b597964b514025ee1910cf414bd74ffa55b8bc702a82046bb6a88ca9c7ac7",
+      "change": "unchanged"
+    },
+    {
+      "original_path": "phase10/src/report_query_pilots.py",
+      "release_path": "phase10/src/report_query_pilots.py",
+      "original_sha256": "788ca83802e4c00c89947f13f36a5a1b61ce04c01c9d17382d3fab99c583dc08",
+      "release_sha256": "788ca83802e4c00c89947f13f36a5a1b61ce04c01c9d17382d3fab99c583dc08",
+      "change": "unchanged"
+    },
+    {
+      "original_path": "phase10/src/run_development_bounds.py",
+      "release_path": "phase10/src/run_development_bounds.py",
+      "original_sha256": "cd7c1e40c10bdf90978b48c70ea5be551ca80368f92bb75ba6acc7a9b429ac9d",
+      "release_sha256": "cd7c1e40c10bdf90978b48c70ea5be551ca80368f92bb75ba6acc7a9b429ac9d",
+      "change": "unchanged"
+    },
+    {
+      "original_path": "phase10/src/run_functional_breadth.py",
+      "release_path": "phase10/src/run_functional_breadth.py",
+      "original_sha256": "0496c3bd066dc6fb8036d6df8c909c3599227a5c2e9c28c89c2b7240ecc35e4f",
+      "release_sha256": "0496c3bd066dc6fb8036d6df8c909c3599227a5c2e9c28c89c2b7240ecc35e4f",
+      "change": "unchanged"
+    },
+    {
+      "original_path": "phase10/src/run_selection_aware.py",
+      "release_path": "phase10/src/run_selection_aware.py",
+      "original_sha256": "9c62326f837fe1720ce8a116cac577e3c16db0f862f1effb6339da15a8aca16f",
+      "release_sha256": "9c62326f837fe1720ce8a116cac577e3c16db0f862f1effb6339da15a8aca16f",
+      "change": "unchanged"
+    },
+    {
+      "original_path": "phase10/src/segment_projection_baseline.py",
+      "release_path": "phase10/src/segment_projection_baseline.py",
+      "original_sha256": "1ff307cf69daf90ed09c21c11833696960a3455ca57c7dc2ccd991a235cfc3de",
+      "release_sha256": "afd86a196d19866acc0d582cbb26f1740ac5579ba99491cbb495518c50079731",
+      "change": "release notice or portable documentation"
+    },
+    {
+      "original_path": "phase10/src/selection_aware_bounds.py",
+      "release_path": "phase10/src/selection_aware_bounds.py",
+      "original_sha256": "cc1d05711ec846ee514f9a560ca4f70c8ef86b66135f0e87e3e6c9947cd79a21",
+      "release_sha256": "c95de901460bd67465c8758f31bf75e134d1833d7eb7c045bbca54efb54413cc",
+      "change": "release notice or portable documentation"
+    },
+    {
+      "original_path": "phase10/src/train_query_pilot.py",
+      "release_path": "phase10/src/train_query_pilot.py",
+      "original_sha256": "bf9a5dbcb957161f596e17c8b65aaf3b5dbcfc96eec7cc1b59ce64a2e331308e",
+      "release_sha256": "bf9a5dbcb957161f596e17c8b65aaf3b5dbcfc96eec7cc1b59ce64a2e331308e",
+      "change": "unchanged"
+    },
+    {
+      "original_path": "phase10/src/train_query_warmstart.py",
+      "release_path": "phase10/src/train_query_warmstart.py",
+      "original_sha256": "dd31d19428a1da4525694491dc5d70359bdebeb52697cf41fe4da037fc5bee95",
+      "release_sha256": "dd31d19428a1da4525694491dc5d70359bdebeb52697cf41fe4da037fc5bee95",
+      "change": "unchanged"
+    },
+    {
+      "original_path": "phase10/tests/test_cheap_queries.py",
+      "release_path": "phase10/tests/test_cheap_queries.py",
+      "original_sha256": "5bfb564c475d4ff3fb9fb01909424fcc14db03576b42351134ab94276a32db47",
+      "release_sha256": "5bfb564c475d4ff3fb9fb01909424fcc14db03576b42351134ab94276a32db47",
+      "change": "unchanged"
+    },
+    {
+      "original_path": "phase10/tests/test_path_bounds.py",
+      "release_path": "phase10/tests/test_path_bounds.py",
+      "original_sha256": "6e3a671212006daf21b2200e8f404f3af2cc4ae65aa825d7c165af7bf4fede59",
+      "release_sha256": "6e3a671212006daf21b2200e8f404f3af2cc4ae65aa825d7c165af7bf4fede59",
+      "change": "unchanged"
+    },
+    {
+      "original_path": "phase10/tests/test_query_gap_distillation.py",
+      "release_path": "phase10/tests/test_query_gap_distillation.py",
+      "original_sha256": "53f082d78e5dea961b7cb3d4e45a3c1ed2bf2816af6b6b7dec8fa4ca71f52500",
+      "release_sha256": "53f082d78e5dea961b7cb3d4e45a3c1ed2bf2816af6b6b7dec8fa4ca71f52500",
+      "change": "unchanged"
+    },
+    {
+      "original_path": "phase10/tests/test_query_training.py",
+      "release_path": "phase10/tests/test_query_training.py",
+      "original_sha256": "9ecd70208969ecf4a34e4ef8d2afd18a6b49e05d74c38c5b4ebaa7bf13b7eba4",
+      "release_sha256": "9ecd70208969ecf4a34e4ef8d2afd18a6b49e05d74c38c5b4ebaa7bf13b7eba4",
+      "change": "unchanged"
+    },
+    {
+      "original_path": "phase10/tests/test_selection_aware.py",
+      "release_path": "phase10/tests/test_selection_aware.py",
+      "original_sha256": "40fb34f05ca9d35d50d5dce94c0b2c1e431e0456d7d5fcd4fc4896666ab816a3",
+      "release_sha256": "40fb34f05ca9d35d50d5dce94c0b2c1e431e0456d7d5fcd4fc4896666ab816a3",
+      "change": "unchanged"
+    },
+    {
+      "original_path": "phase10/configs/query_gap_pilot_v1.json",
+      "release_path": "phase10/configs/query_gap_pilot_v1.json",
+      "original_sha256": "5e8ff7d770455cc20617c5e888e11b4c8024826372d1a0c43e41dd374dd5ac4c",
+      "release_sha256": "5e8ff7d770455cc20617c5e888e11b4c8024826372d1a0c43e41dd374dd5ac4c",
+      "change": "unchanged"
+    },
+    {
+      "original_path": "phase10/configs/query_gap_warmstart_v1.json",
+      "release_path": "phase10/configs/query_gap_warmstart_v1.json",
+      "original_sha256": "440502d926ddf7115e6b6a1296c3deb90ff5f1112a5fa93cd1847cd019173e26",
+      "release_sha256": "440502d926ddf7115e6b6a1296c3deb90ff5f1112a5fa93cd1847cd019173e26",
+      "change": "unchanged"
+    },
+    {
+      "original_path": "phase9/src/hsmm_baseline.py",
+      "release_path": "phase9/src/hsmm_baseline.py",
+      "original_sha256": "3f58575db60040bf95ac6d342339d7044693e1605d72af3cce642ef557383de0",
+      "release_sha256": "3f58575db60040bf95ac6d342339d7044693e1605d72af3cce642ef557383de0",
+      "change": "unchanged"
+    },
+    {
+      "original_path": "phase9/src/physiological_distill.py",
+      "release_path": "phase9/src/physiological_distill.py",
+      "original_sha256": "f888ee42bbb0a0fe21c32cd78f7a857e41d2e3a2822db5dada9f60b931ad5874",
+      "release_sha256": "f888ee42bbb0a0fe21c32cd78f7a857e41d2e3a2822db5dada9f60b931ad5874",
+      "change": "unchanged"
+    },
+    {
+      "original_path": "phase9/src/hsmm_traceback_sensitivity.py",
+      "release_path": "phase9/src/hsmm_traceback_sensitivity.py",
+      "original_sha256": "f2341e096385d3e3982f2016c5d3b0270d14b59138af4020dbd41d0b727817ee",
+      "release_sha256": "f2341e096385d3e3982f2016c5d3b0270d14b59138af4020dbd41d0b727817ee",
+      "change": "unchanged"
+    },
+    {
+      "original_path": "phase9/src/hsmm_score_accounting.py",
+      "release_path": "phase9/src/hsmm_score_accounting.py",
+      "original_sha256": "48a9b63e20be1ebdf7e9897974d9da24131ee5d8759e5d9608a6600047671c17",
+      "release_sha256": "48a9b63e20be1ebdf7e9897974d9da24131ee5d8759e5d9608a6600047671c17",
+      "change": "unchanged"
+    },
+    {
+      "original_path": "phase9/src/hsmm_site_replay.py",
+      "release_path": "phase9/src/hsmm_site_replay.py",
+      "original_sha256": "411b72bd7302fac048c6c110135b909c89880947f0d4f0e48b23f09ba652b239",
+      "release_sha256": "411b72bd7302fac048c6c110135b909c89880947f0d4f0e48b23f09ba652b239",
+      "change": "unchanged"
+    },
+    {
+      "original_path": "phase9/src/hsmm_traceback_corrected.pyx",
+      "release_path": "phase9/src/hsmm_traceback_corrected.pyx",
+      "original_sha256": "1506036595680695fbd56e8b9520052368c93ea93ed94ae90b38a695c150c847",
+      "release_sha256": "1506036595680695fbd56e8b9520052368c93ea93ed94ae90b38a695c150c847",
+      "change": "unchanged"
+    },
+    {
+      "original_path": "phase9/configs/hsmm_baseline.json",
+      "release_path": "phase9/configs/hsmm_baseline.json",
+      "original_sha256": "c743053cf9f6d66fc7809eb4286e3d98a1b21ea95b72b2a176f08821bbfbd919",
+      "release_sha256": "c743053cf9f6d66fc7809eb4286e3d98a1b21ea95b72b2a176f08821bbfbd919",
+      "change": "unchanged"
+    },
+    {
+      "original_path": "phase9/configs/physiological_distill.json",
+      "release_path": "phase9/configs/physiological_distill.json",
+      "original_sha256": "996269dd2e43b4bbbcbe41b18f4c047f2c9aee5128a4ac87b22e42371f4c6ced",
+      "release_sha256": "996269dd2e43b4bbbcbe41b18f4c047f2c9aee5128a4ac87b22e42371f4c6ced",
+      "change": "unchanged"
+    },
+    {
+      "original_path": "phase9/HSMM_LICENSE.md",
+      "release_path": "phase9/HSMM_LICENSE.md",
+      "original_sha256": "960ed22f2a26df33c08d80d382d5476091c6f8cbd110ac8ef2b525b9cda2d0ff",
+      "release_sha256": "960ed22f2a26df33c08d80d382d5476091c6f8cbd110ac8ef2b525b9cda2d0ff",
+      "change": "unchanged"
+    },
+    {
+      "original_path": "phase9/HSMM_LICENSE.md",
+      "release_path": "LICENSE",
+      "original_sha256": "960ed22f2a26df33c08d80d382d5476091c6f8cbd110ac8ef2b525b9cda2d0ff",
+      "release_sha256": "960ed22f2a26df33c08d80d382d5476091c6f8cbd110ac8ef2b525b9cda2d0ff",
+      "change": "unchanged"
+    },
+    {
+      "original_path": "phase10/PROTOCOL_v1.txt",
+      "release_path": "phase10/PROTOCOL_v1.txt",
+      "original_sha256": "87a1372da0d7481dc56718b009b0d9432d73ec02e14a92bb013c9c19171927ee",
+      "release_sha256": "87a1372da0d7481dc56718b009b0d9432d73ec02e14a92bb013c9c19171927ee",
+      "change": "unchanged"
+    },
+    {
+      "original_path": "phase10/FOLLOWUP_v1.txt",
+      "release_path": "phase10/FOLLOWUP_v1.txt",
+      "original_sha256": "4954edd0d132becc6d1e20b272f9787cb413629dc543f6cd52b37d885b955a28",
+      "release_sha256": "4954edd0d132becc6d1e20b272f9787cb413629dc543f6cd52b37d885b955a28",
+      "change": "unchanged"
+    },
+    {
+      "original_path": "phase10/SELECTION_AWARE_PROTOCOL_v1.txt",
+      "release_path": "phase10/SELECTION_AWARE_PROTOCOL_v1.txt",
+      "original_sha256": "0d6ed6d6b470728a634e385d369258cdd3c1f91e62f8ce9841d3ee5a55bbb0a6",
+      "release_sha256": "0d6ed6d6b470728a634e385d369258cdd3c1f91e62f8ce9841d3ee5a55bbb0a6",
+      "change": "unchanged"
+    },
+    {
+      "original_path": "phase10/FUNCTIONAL_BREADTH_PROTOCOL_v1.txt",
+      "release_path": "phase10/FUNCTIONAL_BREADTH_PROTOCOL_v1.txt",
+      "original_sha256": "782378f53415d787abf6dd028009b9c8dd1ac8f2471fa38661ae79f9df3d699a",
+      "release_sha256": "782378f53415d787abf6dd028009b9c8dd1ac8f2471fa38661ae79f9df3d699a",
+      "change": "unchanged"
+    },
+    {
+      "original_path": "phase10/QUERY_GAP_DISTILLATION_CANDIDATE_v1.txt",
+      "release_path": "phase10/QUERY_GAP_DISTILLATION_CANDIDATE_v1.txt",
+      "original_sha256": "8847292317b3d09f10db0fdaa6743653ed6ea7feddd41dd1ae39d482246dd144",
+      "release_sha256": "8847292317b3d09f10db0fdaa6743653ed6ea7feddd41dd1ae39d482246dd144",
+      "change": "unchanged"
+    },
+    {
+      "original_path": "phase10/QUERY_GAP_TRAINING_PROTOCOL_v1.txt",
+      "release_path": "phase10/QUERY_GAP_TRAINING_PROTOCOL_v1.txt",
+      "original_sha256": "faa7e129d6024e13d4870734fb9ce2bd2d012a7d1e84efc6f532631f155c2fbc",
+      "release_sha256": "faa7e129d6024e13d4870734fb9ce2bd2d012a7d1e84efc6f532631f155c2fbc",
+      "change": "unchanged"
+    },
+    {
+      "original_path": "phase10/QUERY_GAP_WARMSTART_PROTOCOL_v1.txt",
+      "release_path": "phase10/QUERY_GAP_WARMSTART_PROTOCOL_v1.txt",
+      "original_sha256": "55debbed7cee151f4fd3bcd5669fb2d999fd272ca0e3ec5f953562ad74e1a712",
+      "release_sha256": "55debbed7cee151f4fd3bcd5669fb2d999fd272ca0e3ec5f953562ad74e1a712",
+      "change": "unchanged"
+    },
+    {
+      "original_path": "phase10/publication_v1/evidence/strong_baseline_audit_v1__audit.json",
+      "release_path": "analysis/evidence/strong_baseline_audit_v1__audit.json",
+      "original_sha256": "3e5c8b5a53a539ed4b4c66185349ea1825b228747d243a2c01fc38239b4ace6f",
+      "release_sha256": "3e5c8b5a53a539ed4b4c66185349ea1825b228747d243a2c01fc38239b4ace6f",
+      "change": "unchanged"
+    },
+    {
+      "original_path": "phase10/publication_v1/evidence/source_hashes.json",
+      "release_path": "analysis/evidence/source_hashes.json",
+      "original_sha256": "3f33b59bea2acf9095039dbdc029c96ad56f028c717b67f73db40be1f4d349ae",
+      "release_sha256": "3f33b59bea2acf9095039dbdc029c96ad56f028c717b67f73db40be1f4d349ae",
+      "change": "unchanged"
+    },
+    {
+      "original_path": "phase10/publication_v1/evidence/distillation_all_21_models.csv",
+      "release_path": "analysis/evidence/distillation_all_21_models.csv",
+      "original_sha256": "560487aeb267741bd262d1156f898da98f67063858c618f67e2f7e89692a7058",
+      "release_sha256": "560487aeb267741bd262d1156f898da98f67063858c618f67e2f7e89692a7058",
+      "change": "unchanged"
+    },
+    {
+      "original_path": "phase10/publication_v1/evidence/functional_breadth_v1__tightness_diagnostic.json",
+      "release_path": "analysis/evidence/functional_breadth_v1__tightness_diagnostic.json",
+      "original_sha256": "2aab38e7ec866b7d4afc817ae7f617c020ef89feee9be57d0252d51af689c6b8",
+      "release_sha256": "2aab38e7ec866b7d4afc817ae7f617c020ef89feee9be57d0252d51af689c6b8",
+      "change": "unchanged"
+    },
+    {
+      "original_path": "phase10/publication_v1/evidence/query_gap_warmstart_v1__summary.json",
+      "release_path": "analysis/evidence/query_gap_warmstart_v1__summary.json",
+      "original_sha256": "6f8d3679681d60cf1578a2425e82a90ed993a0efd90d64f13d85245c41ea94c4",
+      "release_sha256": "6f8d3679681d60cf1578a2425e82a90ed993a0efd90d64f13d85245c41ea94c4",
+      "change": "unchanged"
+    },
+    {
+      "original_path": "phase10/publication_v1/evidence/selection_aware_windows_v1__summary.json",
+      "release_path": "analysis/evidence/selection_aware_windows_v1__summary.json",
+      "original_sha256": "477d7df44b8a5e1c640f9d0dbec76f8e9467261281b17cb7ccd99ab3db219164",
+      "release_sha256": "477d7df44b8a5e1c640f9d0dbec76f8e9467261281b17cb7ccd99ab3db219164",
+      "change": "unchanged"
+    },
+    {
+      "original_path": "phase10/publication_v1/evidence/cheap_queries_and_winners_v1__summary.json",
+      "release_path": "analysis/evidence/cheap_queries_and_winners_v1__summary.json",
+      "original_sha256": "67e0b9d5c44b93d5433d0533266799c3da12f1b074b808c6d299a21f83234df3",
+      "release_sha256": "67e0b9d5c44b93d5433d0533266799c3da12f1b074b808c6d299a21f83234df3",
+      "change": "unchanged"
+    },
+    {
+      "original_path": "phase10/publication_v1/evidence/extraction_audit.json",
+      "release_path": "analysis/evidence/extraction_audit.json",
+      "original_sha256": "d6f2ad1092ed95b3b569678a0b88cf2bd4fe2a7139b71874d5e6cc632fc00c26",
+      "release_sha256": "d6f2ad1092ed95b3b569678a0b88cf2bd4fe2a7139b71874d5e6cc632fc00c26",
+      "change": "unchanged"
+    },
+    {
+      "original_path": "phase10/publication_v1/evidence/query_gap_training_v1__summary.json",
+      "release_path": "analysis/evidence/query_gap_training_v1__summary.json",
+      "original_sha256": "7e8e4a4da40460675ac239e02b3a4fa73fe8dbcc8806ba0b96a425e92fd62fe0",
+      "release_sha256": "7e8e4a4da40460675ac239e02b3a4fa73fe8dbcc8806ba0b96a425e92fd62fe0",
+      "change": "unchanged"
+    },
+    {
+      "original_path": "phase10/publication_v1/evidence/query_gap_warmstart_v1__independent_audit.json",
+      "release_path": "analysis/evidence/query_gap_warmstart_v1__independent_audit.json",
+      "original_sha256": "f42adb1d5e56ef6a50e83fe731e4aeae65fe049792dfd4a4786a498b725218dc",
+      "release_sha256": "f42adb1d5e56ef6a50e83fe731e4aeae65fe049792dfd4a4786a498b725218dc",
+      "change": "unchanged"
+    },
+    {
+      "original_path": "phase10/publication_v1/evidence/query_gap_training_v1__independent_audit.json",
+      "release_path": "analysis/evidence/query_gap_training_v1__independent_audit.json",
+      "original_sha256": "efc9107076590d391bcdb10bffc0e5a9c70fefb2541d5aa7e64ecd34ee4093d4",
+      "release_sha256": "efc9107076590d391bcdb10bffc0e5a9c70fefb2541d5aa7e64ecd34ee4093d4",
+      "change": "unchanged"
+    },
+    {
+      "original_path": "phase10/publication_v1/evidence/functional_bounds_v1__summary.json",
+      "release_path": "analysis/evidence/functional_bounds_v1__summary.json",
+      "original_sha256": "d578b62edd8b55ab3553dc4cae5e06162c694efdfb6adcea7c51b499f2810557",
+      "release_sha256": "d578b62edd8b55ab3553dc4cae5e06162c694efdfb6adcea7c51b499f2810557",
+      "change": "unchanged"
+    },
+    {
+      "original_path": "phase10/publication_v1/evidence/breadth_record_bounds_anonymized.json",
+      "release_path": "analysis/evidence/breadth_record_bounds_anonymized.json",
+      "original_sha256": "83acb55dcc2bf44612d726110f1eba1977e7cffab1bdd504c678bfe784673b4f",
+      "release_sha256": "83acb55dcc2bf44612d726110f1eba1977e7cffab1bdd504c678bfe784673b4f",
+      "change": "unchanged"
+    },
+    {
+      "original_path": "phase10/publication_v1/evidence/CORRECTION.txt",
+      "release_path": "analysis/evidence/CORRECTION.txt",
+      "original_sha256": "fe98c10ca7a86c393ed9183c721d023887504a2b2cd89f824ae0795ebf385cc7",
+      "release_sha256": "fe98c10ca7a86c393ed9183c721d023887504a2b2cd89f824ae0795ebf385cc7",
+      "change": "unchanged"
+    },
+    {
+      "original_path": "phase10/publication_v1/evidence/functional_breadth_v1__summary.json",
+      "release_path": "analysis/evidence/functional_breadth_v1__summary.json",
+      "original_sha256": "8ca3038a84e783864da2c6cfcb7655967611715526be0bbf76860c4203fdb7ed",
+      "release_sha256": "8ca3038a84e783864da2c6cfcb7655967611715526be0bbf76860c4203fdb7ed",
+      "change": "unchanged"
+    },
+    {
+      "original_path": "phase10/publication_v1/evidence/breadth_conditions.csv",
+      "release_path": "analysis/evidence/breadth_conditions.csv",
+      "original_sha256": "886e06ca6ffb1e2acdfd5423f6bb54be392ca594ed2be52b3140bcfee847925d",
+      "release_sha256": "886e06ca6ffb1e2acdfd5423f6bb54be392ca594ed2be52b3140bcfee847925d",
+      "change": "unchanged"
+    },
+    {
+      "original_path": "phase10/publication_v1/evidence/functional_breadth_v1__saved_result_audit.json",
+      "release_path": "analysis/evidence/functional_breadth_v1__saved_result_audit.json",
+      "original_sha256": "db273b1e69e678149c0551d29c0ee37fd56489a62a66944bb0bf0bef3172a3e0",
+      "release_sha256": "db273b1e69e678149c0551d29c0ee37fd56489a62a66944bb0bf0bef3172a3e0",
+      "change": "unchanged"
+    },
+    {
+      "original_path": "phase10/publication_v1/tables/distillation_rows.tex",
+      "release_path": "analysis/tables/distillation_rows.tex",
+      "original_sha256": "3cc77aa3c178c48ab813d5732509ebee0dccdf06a3d509ebf19b2f43bc785ac7",
+      "release_sha256": "3cc77aa3c178c48ab813d5732509ebee0dccdf06a3d509ebf19b2f43bc785ac7",
+      "change": "unchanged"
+    },
+    {
+      "original_path": "phase10/publication_v1/tables/seed_rows.tex",
+      "release_path": "analysis/tables/seed_rows.tex",
+      "original_sha256": "55bad0046ada5bddaf93dcb14e0b8c536f6443e02290bbd4d60c5183745b4f9a",
+      "release_sha256": "55bad0046ada5bddaf93dcb14e0b8c536f6443e02290bbd4d60c5183745b4f9a",
+      "change": "unchanged"
+    },
+    {
+      "original_path": "phase10/publication_v1/tables/tightness_rows.tex",
+      "release_path": "analysis/tables/tightness_rows.tex",
+      "original_sha256": "71e472ced2a581d8de1fc5cc4f584988f54c24c393236f989b3dfd7279d2f891",
+      "release_sha256": "71e472ced2a581d8de1fc5cc4f584988f54c24c393236f989b3dfd7279d2f891",
+      "change": "unchanged"
+    },
+    {
+      "original_path": "phase10/publication_v1/tables/breadth_rows.tex",
+      "release_path": "analysis/tables/breadth_rows.tex",
+      "original_sha256": "40950565338fdf60733700e6d36960c0bd998542ef088309c7cab0801fa56d3c",
+      "release_sha256": "40950565338fdf60733700e6d36960c0bd998542ef088309c7cab0801fa56d3c",
+      "change": "unchanged"
+    },
+    {
+      "original_path": "phase10/publication_v1/tables/winner_rows.tex",
+      "release_path": "analysis/tables/winner_rows.tex",
+      "original_sha256": "fb68836c4ca28d219ed0deb32afe71d33db07baf7b51cd586a4ee196237e77e8",
+      "release_sha256": "fb68836c4ca28d219ed0deb32afe71d33db07baf7b51cd586a4ee196237e77e8",
+      "change": "unchanged"
+    },
+    {
+      "original_path": "phase10/publication_v1/tables/initial_rows.tex",
+      "release_path": "analysis/tables/initial_rows.tex",
+      "original_sha256": "bcaf4b3f499d089a1d55082d24fcd7d4a7f27b6990c0ca4e3c5958201039dca4",
+      "release_sha256": "bcaf4b3f499d089a1d55082d24fcd7d4a7f27b6990c0ca4e3c5958201039dca4",
+      "change": "unchanged"
+    },
+    {
+      "original_path": "phase10/publication_v1/tables/sign_rows.tex",
+      "release_path": "analysis/tables/sign_rows.tex",
+      "original_sha256": "33e1a36e535ecf408fedcfabe9a7cdcfdf40f5c794c898ed473a4f38f961a663",
+      "release_sha256": "33e1a36e535ecf408fedcfabe9a7cdcfdf40f5c794c898ed473a4f38f961a663",
+      "change": "unchanged"
+    },
+    {
+      "original_path": "phase10/publication_v1/tables/query_rows.tex",
+      "release_path": "analysis/tables/query_rows.tex",
+      "original_sha256": "3b8d776f86e6f582909f5a0cdc49b655be4d947c39234dcc8725c1f4f15a36fd",
+      "release_sha256": "3b8d776f86e6f582909f5a0cdc49b655be4d947c39234dcc8725c1f4f15a36fd",
+      "change": "unchanged"
+    },
+    {
+      "original_path": "phase10/publication_v1/scripts/prepare_evidence.py",
+      "release_path": "analysis/scripts/prepare_evidence.py",
+      "original_sha256": "5c555c7cf480c483d0a3f6a657e7bef84cf8ac83fe45fd30487dfc56bd209332",
+      "release_sha256": "5c555c7cf480c483d0a3f6a657e7bef84cf8ac83fe45fd30487dfc56bd209332",
+      "change": "unchanged"
+    },
+    {
+      "original_path": "output/MEP_Overleaf_PNG/fig_distillation.png",
+      "release_path": "figures/fig_distillation.png",
+      "original_sha256": "96b422857bb0ef3a490c1a957f560958e5960e7730820460323c49e13a963d67",
+      "release_sha256": "96b422857bb0ef3a490c1a957f560958e5960e7730820460323c49e13a963d67",
+      "change": "unchanged"
+    },
+    {
+      "original_path": "output/MEP_Overleaf_PNG/fig_breadth.png",
+      "release_path": "figures/fig_breadth.png",
+      "original_sha256": "c9ef4f2776699fc49cf63ea343635646ea061311b435cc45045f8949a6f70b67",
+      "release_sha256": "c9ef4f2776699fc49cf63ea343635646ea061311b435cc45045f8949a6f70b67",
+      "change": "unchanged"
+    },
+    {
+      "original_path": "output/MEP_Overleaf_PNG/fig_initial_sensitivity.png",
+      "release_path": "figures/fig_initial_sensitivity.png",
+      "original_sha256": "d70f0c0a2b2ecd46ac8772c0a433e1d57b530f0d33a2e7140cee3cc33e405fa9",
+      "release_sha256": "d70f0c0a2b2ecd46ac8772c0a433e1d57b530f0d33a2e7140cee3cc33e405fa9",
+      "change": "unchanged"
+    },
+    {
+      "original_path": "output/MEP_Overleaf_PNG/fig_method_overview.png",
+      "release_path": "figures/fig_method_overview.png",
+      "original_sha256": "fd4baa7bab707baa95328fe7be3676582a1e85f8b6f618691b1c86d4d3e46523",
+      "release_sha256": "fd4baa7bab707baa95328fe7be3676582a1e85f8b6f618691b1c86d4d3e46523",
+      "change": "unchanged"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "name": "published_parallel_hsmm_refit_v1",
+  "seed": 20261107,
+  "upstream_commit": "5f9d14ee7f9215bf8cf523341241ee9d79be79ae",
+  "inner_folds": 5,
+  "sites": ["AV", "PV", "TV", "MV"],
+  "budgets_seconds": [20, "full"],
+  "architecture": {
+    "rnn_hidden_size": 60,
+    "rnn_num_layers": 3,
+    "rnn_dropout": 0.1,
+    "ann_hidden_size": [60, 40],
+    "ann_dropout": 0.1
+  },
+  "training": {
+    "batch_size": 32,
+    "validation_batch_size": 128,
+    "crop_frames": 300,
+    "learning_rate": 0.0001,
+    "max_epochs": 1000,
+    "patience": 10,
+    "stop_when_nonimproving_epochs_exceeds_patience": true,
+    "class_weights": "fit_partition_frame_count / fit_partition_class_count",
+    "gap_handling": "remove_ignored_frames_during_training_only",
+    "amp": false
+  },
+  "frontend": {
+    "sample_rate": 4000,
+    "window_samples": 200,
+    "hop_samples": 80,
+    "frequency_bins": 40,
+    "power_floor": 1e-30,
+    "minimum_std": 1e-7,
+    "minimum_prefix_seconds": 1.0
+  },
+  "hsmm": {
+    "min_hr": 30,
+    "max_hr": 180,
+    "min_systole": 150,
+    "max_duration": 1,
+    "murmur_models": ["Holosystolic", "Early-systolic", "Mid-systolic"]
+  },
+  "quality_threshold": 0.65,
+  "calibration_target_sensitivity": 0.95,
+  "torch_threads": 4,
+  "training_cache_directory": "results/hsmm_training_cache_v1",
+  "output_directory": "results/hsmm_baseline_v1",
+  "cython_build_directory": "reviews/auscultation/hsmm_cython_build",
+  "reserved_test_access": "forbidden"
+}

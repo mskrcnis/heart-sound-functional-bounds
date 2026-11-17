@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "people": 48,
+  "record_conditions": 768,
+  "resolved": 701,
+  "witnessed_both_signs": 48,
+  "undetermined": 19,
+  "all_conditions_recomputed": true,
+  "all_21_fits_retained": true,
+  "source_files": 12
+}

@@ -1,0 +1,16 @@
+{
+  "name": "query_gap_warmstart_v1",
+  "seeds": [20261113, 20261114, 20261115],
+  "arms": ["kl", "score", "confidence", "query"],
+  "epochs": 20,
+  "batch_size": 8,
+  "learning_rate": 0.001,
+  "temperature": 2.0,
+  "auxiliary_weight": 1.0,
+  "smooth_l1_beta": 0.01,
+  "eta": 0.005,
+  "sign_etas": [0.001, 0.005, 0.01, 0.05],
+  "reserved_access": "forbidden",
+  "adaptive_followup": true,
+  "warm_start": "same_seed_kl_epoch20_query_gap_training_v1"
+}

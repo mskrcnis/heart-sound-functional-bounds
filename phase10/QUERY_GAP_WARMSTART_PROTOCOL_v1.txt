@@ -1,0 +1,57 @@
+ADAPTIVE FOLLOW-UP — frozen before additional fitting, 8 November 2026
+
+Reason for this experiment
+The original nine-model pilot failed: query primary MAE .058607 vs .048806 KL
+and .051557 score; emission KL ratio 1.6565; zero paired-seed wins. These results
+remain intact. The post-hoc target-scale audit found mean teacher support width
+.002822 against midpoint magnitude .485330 on the 80 fit records. Thus raw
+support-gap matching mostly transfers confidence, and a specific uncertainty
+contribution must be distinguished from that simpler explanation.
+
+This is a declared adaptive development experiment, not a new held-out test or
+independent confirmation. It uses exactly the original 80 fit, 16 monitor and
+24 development continuous six-second records, cached teacher targets and seeds.
+No labels, phase annotations or final reserve inputs are used. No data changes.
+
+Design
+For each seed start ALL four arms from that seed's completed epoch-20 ordinary
+KL checkpoint in query_gap_training_v1. Reset Adam, lr=.001; continue 20 epochs,
+batch 8, same deterministic record orders, no stopping/selection/augmentation.
+Other training details follow QUERY_GAP_TRAINING_PROTOCOL_v1.txt. Save final
+epoch only. This warm start separates behavior after learning ordinary emissions
+from the severe early optimization conflict in the first experiment.
+
+Arms: kl; score; confidence; query.
+All use the original T=2 emission KL. The three auxiliary arms now use weight
+1, beta=.01 smooth-L1. This lower weight is an ADAPTIVE design change prompted
+by the failed pilot, chosen once with no hyperparameter sweep. It is not a
+validated optimum. Score and query targets are unchanged. The new confidence
+control matches C_m,k = R_k(q_m*)/T at each topology's untilted maximum-score
+path, for all four topologies and all three rewards. It has 12 scalar targets.
+Query matches the existing 24 G_m,k(lambda) targets. The mean reduction makes
+duplicating each confidence target for two signs algebraically equivalent.
+
+Every student still recomputes its own duration graph. Confidence and query
+gradients hold selected paths/discrete lag choices fixed. No teacher inference
+is needed by the deployed student. This comparison is about the extra tilted
+path optimization beyond matching the nominal confidence functions themselves.
+
+Frozen metrics and gate
+Original primary metric, score MAE, emission KL and sign-state agreement are
+unchanged. Add response MAE = mean |(G_S-C_S) - (G_T-C_T)| across all 24 tuples,
+where C is broadcast across query signs. Report ALL models and records.
+
+Pass only if query improves the primary mean error by >=10% over EACH of kl,
+score and confidence; beats all three in >=2/3 paired seeds; has mean emission
+KL <=1.05 times kl; AND improves response MAE by >=10% over confidence.
+The final condition asks whether it transfers the non-nominal response itself.
+No p-values or clinical claims. A pass only warrants stronger structured-
+marginal controls and a prospectively unused confirmation design. A failure
+rejects this formulation for further scaling under these two pilot designs;
+do not keep changing its loss weights until the development result is positive.
+
+Verification
+Preserve all first-pilot artifacts and audit. Recompute teacher nominal targets
+from saved T=1 arrays; compare NumPy path rewards and differentiable torch
+values. Verify all 12 warm starts/orders and final checkpoints. Independently
+recompute saved-posterior metrics including the new response error and gate.

@@ -1,0 +1,52 @@
+{
+  "status": "passed",
+  "teacher_target_records_checked": 120,
+  "teacher_forward_records_checked": 3,
+  "final_student_records_checked": 216,
+  "final_models_checked": 9,
+  "teacher_target_max_error": 0.0,
+  "teacher_forward_max_error": 0.0,
+  "student_forward_max_error": 0.0,
+  "query_max_error": 0.0,
+  "metric_max_error": 1.7053911993691884e-07,
+  "means": {
+    "kl": {
+      "emission_kl": 0.6149736051395983,
+      "score_mae": 0.052200832300195094,
+      "global_bound_mae": 0.051740802997624034,
+      "window_bound_mae": 0.04587053496277254,
+      "primary_bound_mae": 0.04880566898019829,
+      "support_gap_mae": 0.05927145689920802
+    },
+    "score": {
+      "emission_kl": 0.7810737491478831,
+      "score_mae": 0.036493508075437726,
+      "global_bound_mae": 0.03668841723020607,
+      "window_bound_mae": 0.06642483435495093,
+      "primary_bound_mae": 0.0515566257925785,
+      "support_gap_mae": 0.08786587995778704
+    },
+    "query": {
+      "emission_kl": 1.018693880505773,
+      "score_mae": 0.0674640471519684,
+      "global_bound_mae": 0.06680600005444615,
+      "window_bound_mae": 0.05040894146310068,
+      "primary_bound_mae": 0.05860747075877341,
+      "support_gap_mae": 0.06454234602558413
+    }
+  },
+  "engineering_gate_passed": false,
+  "relative_primary_improvement": {
+    "kl": -0.2008332634996144,
+    "score": -0.1367592401132245
+  },
+  "paired_seed_wins": 0,
+  "query_to_kl_emission_ratio": 1.6564839075890594,
+  "sources": {
+    "phase10/src/audit_query_pilot.py": "7704a37861a9aaaa0e3542b7f82905f5c30c45a08e416fe57b225e4dc2caddb9",
+    "phase10/results/query_gap_training_v1/run.json": "825d964c371f326b0590a5794f47c27916cc3c76b9f231e4b7f02936847c99e9",
+    "phase10/results/query_gap_training_v1/summary.json": "7e8e4a4da40460675ac239e02b3a4fa73fe8dbcc8806ba0b96a425e92fd62fe0",
+    "phase10/results/query_gap_inputs_v1/manifest.json": "44a07e4d845a306961ba9f7cfd2399df081a3af54f44dfdfb9fb981da36b570a"
+  },
+  "scope": "Independent metric aggregation and saved-posterior re-inference; same already exhaustive-tested DP oracle"
+}

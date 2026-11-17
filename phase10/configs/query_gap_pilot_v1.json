@@ -1,0 +1,21 @@
+{
+  "name": "query_gap_pilot_v1",
+  "prefix_seconds": 6,
+  "fit_people": 80,
+  "monitor_people": 16,
+  "development_people": 24,
+  "selection_prefix": "phase10-querygap-v1:",
+  "seeds": [20261113, 20261114, 20261115],
+  "arms": ["kl", "score", "query"],
+  "epochs": 20,
+  "batch_size": 8,
+  "learning_rate": 0.001,
+  "temperature": 2.0,
+  "auxiliary_weight": 10.0,
+  "smooth_l1_beta": 0.01,
+  "queries": [-1.0, 1.0],
+  "rewards": ["global", "first_half", "second_half"],
+  "eta": 0.005,
+  "sign_etas": [0.001, 0.005, 0.01, 0.05],
+  "reserved_access": "forbidden"
+}

@@ -1,0 +1,2 @@
+Publication audit, 2026-11-09
+The earlier narrative NOVELTY_DECISION_v2.txt said 20 undetermined breadth cases. Direct recomputation from all 768 record_bounds.json entries gives 701 resolved + 48 witnessed both signs + 19 undetermined = 768. The saved tightness_diagnostic.json also gives 19. The manuscript uses 19. No saved scientific result was changed. These are repeated record-conditions, not independent people.

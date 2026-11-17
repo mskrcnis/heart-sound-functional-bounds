@@ -1,0 +1,41 @@
+2026-11-08. Adaptive exploratory extension, recorded before window results.
+
+The fixed 24-record pilot found stable score signs but feasible competing
+murmur topologies in 12 records at eta=0.005. The next question is whether
+uncertainty about the displayed time contribution can be reduced by requiring
+that its topology could actually win the full-record confidence comparison.
+This is different from a local state projection. Novelty is still provisional:
+the optimization primitives remain standard constrained-path duality.
+
+For topology j, C_j is full-record mean confidence and W_j is the contribution
+from one fixed quarter of the recording, normalized by FULL recording length.
+Let l_k be sound lower bounds on min_{Q_k} C_k. A necessary condition for j to
+win is C_j >= b_j=max_{k!=j} l_k. This relaxes the true selection event. It must
+use outer lower bounds, NEVER feasible-minimum values, which could exclude a
+valid winner. Ties are included in the outer relaxation; original tie order
+is retained for actual winner witnesses.
+
+For sign z in {-1,1}, a sound upper bound on z*W_j, conditional on this relaxed
+winning condition and L_j/T >= a_j=L*_j/T-eta, is
+  inf_{lambda,beta>=0} max_q [z W_j(q) + lambda(L_j(q)/T-a_j)
+                             + beta(C_j(q)-b_j)].
+Any nonnegative lambda,beta yields a valid outer bound. The inner maximization
+is one weighted HSMM DAG solve. A cutting-plane master over [0,100]^2 proposes
+queries; a 24-query cap and minimum of evaluated upper bounds retain validity
+without requiring convergence or strong duality. The box only limits tightness.
+The proof is weak duality, not a claimed new theorem.
+
+Compare (A) unconditional window bounds across all murmur topologies;
+(B) those bounds after excluding impossible winning topologies using existing
+global confidence bounds; (C) bounds with the additional necessary winning
+constraint. Healthy-window bounds are computed separately. Union over possible
+murmur winners gives a sound interval for W_winner-W_Healthy. Intersect C with B.
+Do NOT infer a reduction in clinical error from narrower intervals.
+
+Evaluate all 24 fixed records, all four equal frame-index quarters, eta=.005.
+Do not choose windows using score, outcome, annotations or resulting improvement.
+Before real inputs, use exact enumeration on 40 small synthetic graphs with
+quarter-type masks and a confidence constraint, including exact ties. Verify
+containment of exact feasible extrema and support-oracle subgradient identity.
+Report all 96 windows, median width reduction of C vs B, number with >1% relative
+tightening, and runtime. Preserve failures. No training or final reserve access.

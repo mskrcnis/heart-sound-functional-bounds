@@ -1,0 +1,12 @@
+{
+  "status": "complete",
+  "windows": 96,
+  "records": 24,
+  "median_relative_width_reduction_vs_pruned": 0.014940468632208381,
+  "max_relative_width_reduction_vs_pruned": 0.2959818351989444,
+  "windows_more_than_one_percent_tighter": 49,
+  "median_relative_width_reduction_by_topology_pruning": 0.4466208271653255,
+  "median_seconds_per_window": 0.11453510448336601,
+  "elapsed_seconds": 11.128924696939066,
+  "interpretation": "Adaptive exploratory outer bounds; generic duality; no clinical or novelty claim."
+}
